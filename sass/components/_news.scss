@@ -1,0 +1,128 @@
+.site-main-blog{
+    background: white;
+    box-shadow: 0 0 5px rgba(black, 0.2);
+
+    @media(max-width: $sm){
+        max-width: 100%;
+    }
+
+    .entry-header {
+        padding: 0 10px;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 10px;
+        position: relative;
+
+        &:after {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 1px;
+            background: #a7a7a7;
+        }
+
+        .nav-links {
+            margin-right: 10px;
+            padding: 5px 0;
+        }
+        
+        .page-numbers {
+            font-size: 1.4rem;
+            text-decoration: none;
+            font-weight: bold;
+            color: #a7a7a7;
+        }
+        
+        
+        span {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        span.page-numbers.current {
+            color: $primary;
+        }
+
+        i {
+            position: absolute;
+            right: 0;
+            top: 25%;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+
+        .fa-chevron-right {
+            right: -10px;
+        }
+
+        .fa-chevron-left {
+            right: 10px;
+        }
+
+
+    }
+
+    #ft-pag {
+        &:after {
+            width: 0px;
+            height: 0px;
+        }
+
+        .navigation {
+            &:after {
+                height:0px;
+            }
+            .nav-links {
+                padding: 10px 0;
+            }
+
+            i {
+                top:32%;
+            }
+        }
+        
+    }
+
+    .blog-article-wrapper {
+        padding: 0 13px;
+
+        &:hover {
+            background: #ddeaf0;
+            cursor: pointer;
+        }
+
+        p {
+            display: inline;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #1d4780;
+        }
+
+        .title {
+            font-style: normal;
+            display: block;
+            color: $text-color;
+            margin-bottom: 5px;
+
+            .date-blog {
+                color: #848586;
+                font-size: 1.2rem;
+                margin-left: 5px;
+            }
+        }
+    }
+}

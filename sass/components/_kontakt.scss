@@ -1,0 +1,150 @@
+.entry-content-kontakt {
+    width: inherit;
+    margin-bottom: 8px;
+
+    .kontakt{
+        border-top: 1px solid $primary;
+        padding: 12px;
+        padding-bottom: 0;
+        font-size: 1.6rem;
+
+        @media(max-width: $sm) {
+            margin-bottom: 20px;;
+        }
+
+
+        .nav-link {
+            color: #c3c3c3;
+        }
+
+        button {
+            font-family: 'Museo Slab 300';
+            padding: 12px 23px;
+
+            i {
+                margin-left: 5px;
+            }
+        }
+
+        button.active {
+            color: $primary;
+        }
+
+        #nav-tabContent {
+            padding: 13px 0;
+            padding-bottom: 0;
+        }
+
+        .ulica-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .ulica {
+                color: #b8b8b8;
+                font-size: 1.2rem;
+                line-height: 1;
+            }
+
+            a {
+                font-size: 1.2rem;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline; 
+                }
+            }
+
+        }
+        
+        
+
+        .sivi-separator {
+            width: 100%;
+            height: 1px;
+            background-color: #c0c0c0;
+            margin: 20px 0;
+        }
+    }
+
+    .forma-info {
+
+        @media(max-width: $md) {
+            flex-direction: column;
+        }
+        .forma{
+            flex: 1 0 350px;
+
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                box-shadow: inset 0px 0px 0px 3px rgba(216,216,216, 1.0);
+                height: 37px;
+                margin-bottom: 15px;
+                
+                &:active,
+                &:focus {
+                    box-shadow: inset 0px 0px 0px 3px rgba($primary, 1.0);
+                }
+            }
+
+            textarea {
+                height: 151px;
+                margin-bottom: 10px;
+            }
+
+            label {
+                color: #909090;
+                font-size: 1.4rem;
+                font-family: 'Museo Slab 300';
+                line-height: 1;
+            }
+
+            .form-btn {
+                font-family: Verdana;
+                font-size: 1.2rem;
+                color: white;
+                background: linear-gradient(180deg, rgba(34, 77, 129, 0.8) 0%, rgba(31,83,150,1) 100%) !important;
+                padding: 8px 21px;
+                width: 92px;
+                border-radius: 5%;
+                line-height: 1;
+                margin-bottom: 75px;
+
+                @media(max-width: $sm) {
+                    margin-bottom: 30px;
+                }
+
+            }
+        }
+
+        .info {
+            padding-left: 44px;
+            font-family: 'Museo Slab 500';
+            font-size: 18px;
+            color: $primary;
+            line-height: 22px;
+
+            @media(max-width: $md) {
+                padding-left: 0;
+                margin-bottom: 30px;
+                
+            }
+
+            @media(max-width: $sm) {
+                margin-bottom: 20px;
+                
+            }
+
+            span {
+                display: block;
+                font-size: 1.4rem;
+                color: #909090;
+            }
+
+            & > div {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+

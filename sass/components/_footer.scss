@@ -1,0 +1,156 @@
+footer {
+    width: 100%;
+    background: url('../img/footer-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 24px;
+
+    .kolona {
+        @include flex-column;
+        @media(max-widht:$md) {
+            flex-direction: row;
+        }
+    }
+
+    .kolona1,
+    .kolona {
+        @media (max-width: $md){
+            flex: 1 0 33%;
+            margin-bottom:30px;
+        }
+
+       
+
+        @media (max-width: $xs){
+            flex: 100%;
+            margin-bottom:30px;
+        }
+    }
+
+    //Footer links
+    .sadrzaj-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .naslov {
+            font-size: 1.4rem;
+            color: white;
+            font-family: 'Museo Slab 500';
+            line-height: 1;
+            margin-bottom: 18px;
+            display: inline-flex;
+        }
+
+        a {
+            font-size: 1.1rem;
+            text-decoration: none;
+            color: white;
+            font-family: 'Verdana';
+            font-weight: normal;
+            width: fit-content;
+            line-height: 20px;
+            &:hover {
+                color: $hover;
+            }
+        }
+
+        .kucica {
+            width: fit-content;
+            height: min-content;
+            margin-right: 24px;
+
+            a{
+                line-height: 1;
+            }
+        }
+
+        .o-firmi-sadrzaj {
+            @include flex-column;
+        }
+
+        .ponude,
+        .mapa {
+            @media(max-width: $xs) {
+                padding-left: 35px;
+            }
+        }
+
+        .reference,
+        .kontakti {
+            @media(max-width: $xs) {
+                padding-left: 35px;
+            }
+        }
+
+        .download {
+            @media(max-width: $md) {
+                padding-left: 35px;
+            }
+
+           
+        }
+        
+        .stroke {
+            position: relative;
+            background: #6294d4;
+            width: 168px;
+            height: 153px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 7px;
+            .embed {
+                position: absolute;
+                width: 162px;
+                height: 147px;
+    
+            }
+        }
+    }
+
+    //Copyright
+    .copyright {
+        color: $separator;
+        background: rgba( #062d4e, 0.5);
+        width:100%;
+      
+        display: flex;
+        align-items: center;
+        margin-top: 24px;
+
+        .copyright-content {
+            height: 37px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Museo Slab 300';
+
+            @media(max-width:$xs){
+                flex-direction: column;
+                height: auto;
+                align-items: flex-start;
+                padding: 10px;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            .footer-logo {
+                display: flex;
+                align-items: center;
+
+                p {
+                    margin-right: 13px;
+                }
+
+                
+            @media(max-width:$xs){
+                margin-top: 10px;
+            }
+            }
+        }
+    }
+}

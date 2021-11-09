@@ -1,0 +1,31 @@
+#o-nama {
+    display: flex;
+    flex-direction: column;
+    max-width: 604px;
+    width: 100%;
+    @media(max-width: $sm) {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-family: 'Museo Slab 500';
+        font-size: 3.4rem;
+        color: #c3c3c3;
+        line-height: 1;
+    }
+
+    .card-custom {
+        background: white;
+        box-shadow: 0 0 5px rgba(black, 0.2);
+        width: 100%;
+        height: auto;
+    }
+
+    .card-o-firmi {
+        margin-bottom: 27px;
+        padding: 22px 27px 29px 20px;
+        font-size: 1.4rem;
+        line-height: 24px;
+        color:#164686;
+    }
+}

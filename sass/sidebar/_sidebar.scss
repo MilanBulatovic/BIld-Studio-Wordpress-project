@@ -1,0 +1,166 @@
+aside {
+    max-width: 346px;
+
+    @media (max-width: $md) {
+        padding-left: 20px;
+    }
+
+    @media (max-width: $sm) {
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    //Vijesti sidebar
+    .article-post-wrapper {
+        margin-bottom: 25px;
+        @media(max-width: $md) {
+            margin-bottom: 25px;
+        }
+    }
+
+    //Widgets
+    #widget-wrapper {
+        background: white;
+        box-shadow: 0 0 5px rgba(black, 0.2);
+        margin-bottom: 27px;
+
+        .wp-block-latest-posts {
+            padding: 25px 34px 7px 38px;
+       
+            li {
+                margin-bottom: 18px;
+                position: relative;
+
+                &:before {
+                    content:'';
+                    width: 5px;
+                    height:5px;
+                    left: -17px;
+                    margin-right: 15px;
+                    top: 7px;
+                    position: absolute;
+                    background: $dark-gray;
+                }
+
+                &:hover {
+                    &:before {
+                        background: $primary;
+                    }
+                }
+
+            }
+
+            a {
+                font-size: 1.4rem;
+                text-decoration: none;
+                margin-bottom: 40px;
+                color: $dark-gray;
+                line-height: 18px;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    #side {
+        margin-top: 25px;
+    }
+}
+
+//Anketa
+.dem-poll-title {
+    font-size: 1.4rem !important;
+    position: relative;
+    color: $primary;
+    margin-top: 0 !important;
+    font-family: 'Museo Slab 300';
+    font-weight: 600;
+    width: 100%;
+    padding: 11px 0 5px 42px;
+
+    &:before {
+        content:url('../img/qmark.png');
+        position: absolute;
+        font-size: 3rem;
+        line-height: normal;
+        top: 3px;
+        left: 15px;
+        color: $primary;
+    }
+    
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: $lightGrey;
+    }
+}
+
+.dem-screen {
+    left:0;
+    padding-left: 21px;
+    height: auto !important;
+
+    .dem-vote {
+        li {
+            font-size: 1.4rem;
+            color: #595959;
+            margin-bottom: 1.2rem !important;
+        }
+    }
+
+    .dem-bottom {
+        margin-top: 27px;
+        margin-bottom: 15px;
+        padding-bottom:0!important;
+    }
+
+    .dem-results-link {
+        background: linear-gradient(180deg, rgba(178, 178, 179, 0.8) 0%, rgb(145, 145, 145) 100%) !important;
+        border: none !important;
+        padding: 6px 0 !important;
+        font-size: 1.4rem !important;
+        color: white !important;
+        border-radius: 3px;
+        margin: 0 !important;
+        line-height: 1 !important;
+        width: 88px;
+        text-decoration: none;
+    }
+}
+
+.dem__radio_label {
+    display: flex !important;
+    align-items: center !important;
+}
+
+//Checkboxes
+.dem__radio_label .dem__spot {
+    border-radius: 0% !important;
+    border:0 !important;
+    box-shadow: inset 0 0 0 1px #858585;
+    width: 9px !important;
+    height: 9px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-right:7px !important;
+}
+
+//Checked square
+.dem__radio_label .dem__spot:after {
+    background: $primary !important;
+    border-radius: 0% !important;
+    width: 5px !important;
+    height: 5px !important;
+    top: unset !important;
+    left: unset !important;
+    transform: translate(0) !important;
+
+}
+

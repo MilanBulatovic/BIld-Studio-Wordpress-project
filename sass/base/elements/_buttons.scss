@@ -1,0 +1,35 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="text"],
+input[type="email"] {
+	border: none;
+	background: none;
+	&:active,
+	&:focus {
+		border: none;
+		outline: none;
+	}
+}
+
+//Anketa
+.dem-bottom {
+	display: flex;
+	align-items: center;
+}
+
+.bild-btn {
+	background: rgb(54,111,182) !important;
+	background: linear-gradient(180deg, rgba(54,111,182,0.8) 0%, rgba(31,83,150,1) 100%) !important;
+	border: none !important;
+	padding: 6px 21px !important;
+	font-size: 1.4rem !important;
+	font-weight: normal !important;
+	margin-right: 26px !important;
+	width: 88px;
+}
+
+
+
+

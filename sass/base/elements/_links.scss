@@ -1,0 +1,19 @@
+a {
+	color: $primary;
+	font-size: 1.6rem;
+
+	&:visited {
+		color: black;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $hover;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}

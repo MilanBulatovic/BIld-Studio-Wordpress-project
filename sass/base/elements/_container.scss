@@ -1,0 +1,17 @@
+.container-custom {
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    @media(max-width:$md){
+        padding: 0 10px;
+    }
+
+}
+
+.swiper-container-hero {
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
